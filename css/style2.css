@@ -1,0 +1,75 @@
+/* Style de la fenêtre pop-up */
+        .popup {
+            display: none; /* Cacher la pop-up par défaut */
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            
+        }
+
+        /* Fond sombre en arrière-plan quand la pop-up est active */
+        .overlay {
+            display: none; /* Cacher l'overlay par défaut */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        /* Style du bouton */
+        .btne {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 30px;
+        }
+
+        .btne:hover {
+            background-color: #45a049;
+        }
+
+        /* Style du bouton pour fermer la pop-up */
+        .close-btn {
+            color: #aaa;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            float: right;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: black;
+        }
+
+        /* Style du formulaire */
+        .form-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container input {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+        }
+        .pop-title{
+            text-align: center;
+        }
+        .bi-person-fill{
+            font-size: 50px;
+        }
+        
